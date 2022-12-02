@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'home.dart';
 
 void main() {
   runApp(const FlutterGitHub());
@@ -9,13 +10,9 @@ class FlutterGitHub extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Flutter GitHub'),
-      ),
-      body: const Center(
-        child: Text('Hello World'),
-      ),
+    return MaterialApp(
+      title: 'Flutter GitHub',
+      home: HomeScreen(),
     );
   }
 }
